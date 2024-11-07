@@ -6,7 +6,7 @@ import { NoteItem } from '../../../client/types'
 
 import { uuidPlugin } from '../../utils/reactMarkdownPlugins'
 import 'highlight.js/styles/github.css';
-import 'github-markdown-css';
+// import 'github-markdown-css';
 
 // https://github.com/remarkjs/react-markdown/issues/339#issuecomment-653396337
 // window.process = { cwd: () => '' };

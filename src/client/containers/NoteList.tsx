@@ -80,8 +80,7 @@ export const NoteList: React.FC = () => {
   // ===========================================================================
   // Handlers
   // ===========================================================================
-  const newNoteHandler = () =>
-    console.log('newnote')
+
   const focusSearchHandler = () => searchRef.current.focus()
 
   const handleDragStart = (event: ReactDragEvent, noteId: string = '') => {
@@ -157,15 +156,8 @@ export const NoteList: React.FC = () => {
 
   return (
     <aside className="note-sidebar">
-      
-      <div className="note-sidebar-header">        
-        <h3>hello</h3>
+      <div className="note-sidebar-header">
         <SearchBar searchRef={searchRef} searchNotes={_searchNotes} />
-        <NoteListButton
-          dataTestID={TestID.EMPTY_TRASH_BUTTON}
-          handler={newNoteHandler}
-          label="New"
-        >New Note</NoteListButton>
         {showEmptyTrash && (
           <NoteListButton
             dataTestID={TestID.EMPTY_TRASH_BUTTON}
