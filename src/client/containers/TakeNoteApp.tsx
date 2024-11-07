@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { DragDropContext, DropResult } from 'react-beautiful-dnd'
+// import { DragDropContext, DropResult } from 'react-beautiful-dnd'
+import { DragDropContext, DropResult } from '@hello-pangea/dnd';
 // import SplitPane from 'react-split-pane'
 import dayjs from 'dayjs'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
